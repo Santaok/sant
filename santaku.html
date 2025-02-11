@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery</title>
+    <link rel="stylesheet" href="styles/app.css">
+<link rel="shortcut icon" href="assets/dd.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/fonts/font.css">
+</head>
+<body>
+  
+
+  <header>
+    <h1>add your picture</h1>
+    <template id="cardTemplate">
+        <div class="card__container">
+            <div class="card__first__group">
+            <span class="card__url__span">https://</span>
+          <input type="text" class="card__url" placeholder="enter the link" required>
+        </div>
+          <input type="text" class="card__title" placeholder="Enter a comment" maxlength="100">
+          <button class="add__button">add card </button>
+          <button class="delete__button">Deleted all cards</button>
+        </div>
+      </template>
+    </header>
+
+      <div class="card__block">
+        <div class="block__item">
+          <img src="assets/b5dc28a7bf471b6914fe1fef97c7a16c.jpg" alt="">
+          <p class="block__title">Пример</p>
+          <button class="like__button"></button>
+          <button class="del__card">Удалить карточку </button>
+
+        </div>
+    </div>
+    
+     <button class="links">get links</button>
+      <div class="block__url">
+<p class="block__href">https://clck.ru/3GJZXv</p>
+<p class="block__href">https://clck.ru/3GEDz9</p>
+<p class="block__href">https://clck.ru/3GEDzQ</p>
+      </div>
+    
+</body><script src="scripts/script.js"></script>
+</html>
