@@ -1,8 +1,6 @@
 
 .page{
-      background-image: url(/assets/back.jpg);
-      background-size: cover;
-      background-color: rgb(0, 0, 0);
+   background-color: rgb(46, 43, 43);
 }
 input{
     background-color:rgba(255, 255, 255, 0);
@@ -11,7 +9,8 @@ input{
     font-family: "space_regular";
     font-size: 16px;
     font-weight: 700;
-    color:rgba(255, 255, 255, 0.826);
+    color:rgba(227, 225, 225, 0.905);
+    
 }
 .card__url{
     border-radius:  0 6px 6px 0;
@@ -20,27 +19,17 @@ input{
     border-radius:  6px;
 
 }
-.card__url__span{
-    background-color: rgba(238, 244, 255, 0.053);
-    padding: 10px;
-    padding-top: 12px;
-    margin-right: -0.1vw;
-   border-radius: 6px 0 0 6px;
-   color:rgb(247, 247, 247);
-    border: 1px solid rgb(136, 149, 172);
-    font-weight: 700;
-    font-family: "space_regular";
-}
+
 .card__first__group{
     display: flex;
     text-align: center;
 }
 ::placeholder{
-    color:rgba(255, 255, 255, 0.932);
+    color:rgb(255, 255, 255);
+    
 }
 .card__container{
     display: flex;
-    backdrop-filter: blur(10px);
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -52,7 +41,8 @@ input{
    border-radius: 22px;
    border: 1px solid #ffffff;
    position: absolute;
-   left: 37%;
+   left: 37vw;
+   top: 4vw
 }
 button{
     background-color: rgba(238, 244, 255, 0);
@@ -66,17 +56,11 @@ button{
     cursor: pointer;
     border: 1px solid rgb(209, 207, 207);
     transition: all 0.1s ease-in;
+    backdrop-filter: blur(10px);
 }
 
-h1{
-    font-family: "space_regular";
-    font-size: 28px;
-    font-weight: 800;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    margin-right: 3vw;
-}
+
+
 .active{
     width: 20vw;
     height: 10vw;
@@ -88,18 +72,14 @@ h1{
     left: 39vw;
 }
 .card__block{
-   position: absolute;
- 
+   
    gap: 2vw;
    top: 28vw;
+   left: 10vw;
    z-index: 2;
    display: flex;
-   align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    border-radius: 12px;
+   flex-direction: column;
+   
 }
 img{
     width: 13vw;
@@ -115,15 +95,7 @@ img{
     font-weight: 700;
     width: 5vw;
 }
-.block__item{
-    background-color: rgba(101, 43, 177, 0.747);
-    width: 15vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 12px;
-    transition: all 0.4s ease-in-out;
-}
+
 .block__item__active{
     background-color: rgba(101, 43, 177, 0.747);
     width: 15vw;
@@ -177,10 +149,27 @@ img{
     width: 250px;
     text-align: center;
     position: absolute;
-    top: 5vw;
+    top:6vw;
+    right: 2vw;
     transition: all 1s ease;
 }
 .links{
     position: absolute;
-    top: 1vw;
+    top: 2vw;
+    right: 1vw;
+}
+.card__block__items{
+    background-color: rgba(127, 66, 207, 0.575);
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.cards__input__block{
+    background-color: blue;
+    z-index: 5;
 }
